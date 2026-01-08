@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+
+    <body>
+
+    <style>
+        body
+        {
+            background-image:url(images/painting4.jpeg);
+        }
+    </style>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+alert("Get To Know Nadia!");
+</script>
+
+<hr size="3" color="black">
+
+<table style="width:100%; background-color:palevioletred;" align="center">
+    <tr>   
+        <td colspan="3" align="center">
+            <!--Tajuk utama-->
+            <h1>Welcome to Nadia Ameera' Personal Website ♡</h1>
+        </td>
+    </tr>
+</table>
+
+<hr size="3" color="black">
+
+<!--Menu-->
+<center>
+    <button onclick="window.open('index.html', '_blank')">Home</button>
+    <button onclick="window.open('biodata.html', '_blank')">Biodata</button>
+    <button onclick="window.open('education.html', '_blank')">Education</button>
+    <button onclick="window.open('experience.html', '_blank')">Experience</button>
+    <button onclick="window.open('family.html', '_blank')">Family</button>
+    <button onclick="window.open('gallery.html', '_blank')">Gallery</button>
+    <button onclick="window.open('contact.html', '_blank')">Contact</button>
+</center>
+
+<hr size="3" color="black"
+
+<center>
+<h3 align="center">Time Flow⏰</h3>
+</center>
+
+<p align="center" id="clock"></p>
+
+<script>
+function updateClock() {
+    let now = new Date();
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    let time = hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("clock").innerHTML = time;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+<!--Gambar utama-->
+<center>
+    <img src="images/nadia peace.jpg" width="200"  border="2">
+</center>
+
+<!--pengenalan diri-->
+<h2 align="center">About This Website</h2>
+
+<hr size="3" color="black">
+
+<font face="Trebuchet MS">
+
+<p>
+<h4 style="text-align: justify;">
+    My name is Nadia, and I’m a passionate and curious student who loves to learn, grow and explore new experiences in life. This website is a reflection of who I am. "A glimpse into my personal journey, achievements and the things that inspire me every day".
+    I’ve always believed that learning goes beyond the classroom. Through my studies and interactions with others, I’ve gained valuable lessons that shape the person I am today. This website shares parts of that journey from my education and experiences to my family and the activities that bring me joy.
+    I hope that as you browse through these pages, you’ll get to know me better... not just as a student, but also as an individual who strives to make every moment meaningful. Thank you for visiting and I hope you enjoy exploring my story!
+</h4>
+</p>
+
+<hr size="3" color="black"
+
+<br>
+
+<center>
+    <p><i> Preview of favourite scenery</i></p>
+    <img src="images/view oren merah.jpg" width="150" height="100" border="2">
+    <img src="images/view ada matahari.jpg" width="150" height="100" border="2">
+    <img src="images/view3 jalan.jpg" width="150" height="100" border="2">
+</center>
+
+<center>
+    <p><i>"A little website that tells my story"</i></p>
+</center>
+
+<div style="text-align:center; margin:20px 0;">
+    <audio controls>
+        <source src="audio/ukulele-cute-joyful-music-400908.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<!-- Footer Section -->
+<table style="width:100%; background-color:rgb(215, 158, 201); border:2px solid black; padding:10px;" align="center">
+    <tr>
+        <td align="center">
+            &copy; 2026 Nadia Ameera | Last updated: 10 January 2026 | Created: 2026
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

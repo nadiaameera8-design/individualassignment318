@@ -1,0 +1,35 @@
+body 
+   {
+    background-image:url(images/painting.webp);
+   }
+h1 
+   {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+   }
+h1:hover 
+   {
+    color: maroon;
+   }
+a:link
+   {
+    color:maroon;
+    background-color:whitesmoke;
+    text-decoration:none;
+    padding: 15px;
+    text-align:center;
+    display: inline-block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+.img-hover 
+   {
+   margin: 8px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+.img-hover:hover 
+   {
+   transform: scale(1.1) translateY(-8px);
+   box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+   }
